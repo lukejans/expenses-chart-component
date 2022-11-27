@@ -1,0 +1,127 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+
+/* COLOR / FONTS */
+:root {
+  /* primary */
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  /* neutral */
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+}
+body {
+  font-family: 'DM Sans', Calibri, sans-serif;
+  background-color: var(--cream);
+}
+
+/* LAYOUT */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 375px;
+  gap: 1rem;
+}
+/* balance card */
+.bal-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+  padding: 1.15rem 2rem;
+  border-radius: 1rem;
+  color: var(--very-pale-orange);
+  background-color: var(--soft-red);
+}
+.my-bal {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--cream);
+}
+.spent,
+.bal {
+  font-weight: 700;
+  margin-top: 6px;
+}
+.bal {
+  font-size: 1.5rem;
+}
+.spent {
+  font-size: 2rem;
+}
+.spent span,
+.bal span {
+  font-weight: 400;
+}
+.logo {
+  max-width: 50px;
+  max-height: 50px;
+}
+/* statistics card */
+.stats-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+  padding: 1.15rem 2rem;
+  border-radius: 1rem;
+  color: var(--dark-brown);
+  background-color: var(--very-pale-orange);
+}
+.spending {
+  align-self: flex-start;
+  font-size: 1.45rem;
+}
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 310px;
+  height: 180px;
+  gap: 1.65rem;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--cream);
+}
+.month-spent,
+.month-percent,
+.day {
+  font-size: 0.75rem;
+  color: var(--medium-brown);
+}
+.month {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 4.5rem;
+  margin: 1.25rem 0 0.75rem 0;
+  width: 310px;
+}
+.month-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* CARDS */
+
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
