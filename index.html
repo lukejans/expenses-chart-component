@@ -13,67 +13,38 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=DM+Sans:400,700" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="bal-card">
-        <div>
-          <p class="my-bal">My balance</p>
-          <h1 class="bal"><span>$</span>921.48</h1>
+    <div class="container">
+      <header class="upper-part">
+        <div class="left">
+          <p>My balance</p>
+          <h2>$921.48</h2>
         </div>
-        <img
-          class="logo"
-          src="./images/logo.svg"
-          alt="Logo"
-          aria-hidden="true" />
+
+        <img src="./images/logo.svg" alt="" class="right logo" />
       </header>
 
-      <main class="stats-card">
-        <h2 class="spending">Spending - Last 7 days</h2>
-        <div class="chart-container">
-          <div class="bar-container">
-            <div class="bar"></div>
-            <p class="day">mon</p>
-          </div>
-          <div class="bar-container">
-            <div class="bar"></div>
-            <p class="day">tue</p>
-          </div>
-          <div class="bar-container">
-            <div class="bar"></div>
-            <p class="day">wed</p>
-          </div>
-          <div class="bar-container">
-            <div class="bar"></div>
-            <p class="day">thu</p>
-          </div>
-          <div class="bar-container">
-            <div class="bar"></div>
-            <p class="day">fri</p>
-          </div>
-          <div class="bar-container">
-            <div class="bar"></div>
-            <p class="day">sat</p>
-          </div>
-          <div class="bar-container">
-            <div class="bar"></div>
-            <p class="day">sun</p>
-          </div>
-        </div>
+      <main class="lower-part">
+        <h2>Spending - Last 7 days</h2>
+        <section class="chart-container"></section>
 
-        <section class="month">
-          <div class="month-left">
-            <p class="month-spent">Total this month</p>
-            <h1 class="spent"><span>$</span>478.33</h1>
+        <hr />
+
+        <section class="stats">
+          <div class="left">
+            <p>Total this month</p>
+            <h1>$478.33</h1>
           </div>
-          <div class="month-right">
-            <h5 class="percent">+2.4%</h5>
-            <p class="month-percent">from last month</p>
+
+          <div class="right">
+            <b>+2.4%</b>
+            <p>from last month</p>
           </div>
         </section>
       </main>
-
       <footer class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
